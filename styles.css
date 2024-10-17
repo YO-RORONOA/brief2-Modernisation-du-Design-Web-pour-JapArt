@@ -317,3 +317,115 @@ nav .nav-right a:hover {
     object-fit: cover; /* Maintain aspect ratio without distortion */
     border-radius: 8px; /* Optional rounded corners for the images */
 }
+/* Overlay for Three Images */
+.overlay {
+    position: absolute; /* Position overlay absolutely within the container */
+    top: 50%; /* Center overlay vertically */
+    left: 50%; /* Center overlay horizontally */
+    transform: translate(-50%, -50%); /* Offset the overlay to be centered */
+    background-color: rgba(64, 64, 64, 0.5); /* Dark gray background with reduced opacity */
+    width: 85%; /* Make overlay cover most of the image width */
+    height: auto; /* Adjust height based on content */
+    padding: 30px; /* Add padding for space inside the overlay */
+    text-align: center; /* Center text within the overlay */
+    color: white; /* Set text color to white */
+    box-sizing: border-box; /* Include padding in the total width */
+    border-radius: 15px; /* Rounded corners for the overlay */
+}
+
+/* Button Styling for Three Images */
+.three-images button {
+    background-color: white; /* Button background color */
+    color: black; /* Button text color */
+    border: none; /* Remove border from button */
+    padding: 10px 20px; /* Add padding inside the button */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    border-radius: 60px; /* Rounded corners for the button */
+    margin-top: 10px; /* Space above the button */
+}
+
+.three-images button:hover {
+    background-color: #f0f0f0; /* Change button color on hover */
+}
+
+/* Intro Section */
+.intro {
+    padding: 20px; /* Add padding around the intro section */
+    display: flex; /* Use flexbox layout for the intro */
+    align-items: center; /* Center items vertically */
+}
+
+/* Title and Image Alignment */
+.image-title {
+    display: flex; /* Use flexbox for image and title alignment */
+    align-items: center; /* Center items vertically */
+}
+
+/* Image styling */
+.top-image {
+    width: 900px; /* Adjust this size as needed for the top image */
+    margin-right: 20px; /* Space between image and title text */
+}
+
+/* Title Content */
+.title-content {
+    text-align: left; /* Align title text to the left */
+}
+
+/* Centering the Title */
+.title-content h1 {
+    margin: 0; /* Remove default margin from the title */
+    margin-bottom: 20px; /* Space between title and the line */
+}
+
+/* Author Name */
+.title-content h3 {
+    margin: 25px 0; /* Space above and below the author name */
+}
+
+/* Separator */
+.separator {
+    border: 1px solid white; /* White line for separation */
+    margin: 20px 0; /* Space above and below the separator */
+}
+
+.section-title {
+    text-align: center; /* Center-align section title text */
+}
+
+/* Artworks Section */
+.artworks {
+    display: flex; /* Use flexbox layout for artworks */
+    justify-content: space-around; /* Space out artworks evenly */
+    flex-wrap: wrap; /* Allow artworks to wrap to the next line */
+    padding: 20px; /* Add padding around the artworks section */
+}
+
+.artwork-item {
+    width: 15%; /* Set width for each artwork item */
+    text-align: center; /* Center-align text for each artwork */
+    margin-bottom: 20px; /* Space below each artwork item */
+    overflow: hidden; /* Hide any overflow to crop the image */
+    border-radius: 8px; /* Rounded corners for artwork items */
+}
+
+.artwork-item img {
+    width: 100%; /* Make image fill the width of the artwork item */
+    height: 400px; /* Fixed height for artwork images */
+    object-fit: cover; /* Crop the image to fill the box */
+}
+
+/* Button Styling */
+button {
+    background-color: white; /* Set button background to white */
+    color: black; /* Set button text color to black */
+    border: none; /* Remove border from buttons */
+    padding: 10px 20px; /* Add padding inside the buttons */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    margin-top: 10px; /* Space between image and button */
+    border-radius: 60px; /* Rounded corners for buttons */
+}
+
+button:hover {
+    background-color: #f0f0f0; /* Change button color on hover */
+}
