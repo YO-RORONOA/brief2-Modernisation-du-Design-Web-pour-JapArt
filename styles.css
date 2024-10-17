@@ -192,51 +192,6 @@ section#collection {
 
 
 
-
-
-/* Footer */
-footer {
-    background-color:#000000 ;
-    color: rgb(255, 255, 255);
-    padding: 40px 0;
-}
-
-.footer-content {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    margin-bottom: 20px;
-    padding-left: 200px;
-
-}
-
-.footer-section {
-    flex: 1;
-    padding: 20px;
-}
-
-.footer-section h3 {
-    margin-bottom: 15px;
-    font-size: 1.5em;
-}
-
-.footer-section p {
-    color: #ffffff;
-    font-size: 1em;
-    line-height: 1.6;
-}
-
-.footer-bottom {
-    text-align: center;
-    padding-top: 20px;
-    border-top: 1px solid #444;
-}
-
-footer p {
-    margin: 0;
-    font-size: 0.9em;
-}
-
 /* Basic Styling */
 body {
     background-color: black; /* Set background color of the page to black */
@@ -244,30 +199,6 @@ body {
     font-family: Arial, sans-serif; /* Use Arial font with fallback to sans-serif */
     margin: 0; /* Remove default margin around the body */
     padding: 0; /* Remove default padding around the body */
-}
-
-/* Navigation */
-header {
-    background-color: #333; /* Set header background color to dark gray */
-    padding: 10px 20px; /* Add padding inside the header */
-    display: flex; /* Use flexbox layout for header */
-    justify-content: space-between; /* Space out navigation items */
-    align-items: center; /* Center items vertically within the header */
-}
-
-nav .nav-left {
-    font-size: 20px; /* Set font size for the left navigation items */
-}
-
-nav .nav-right a {
-    color: white; /* Set link color to white */
-    text-decoration: none; /* Remove underline from links */
-    margin: 0 15px; /* Add margin between navigation links */
-    font-size: 18px; /* Set font size for navigation links */
-}
-
-nav .nav-right a:hover {
-    color: #f0a500; /* Change link color on hover */
 }
 
 /* Intro Section */
@@ -379,7 +310,7 @@ nav .nav-right a:hover {
 }
 
 /* Author Name */
-.title-content h3 {
+.title-content h2 {
     margin: 25px 0; /* Space above and below the author name */
 }
 
@@ -429,3 +360,149 @@ button {
 button:hover {
     background-color: #f0f0f0; /* Change button color on hover */
 }
+
+
+body {
+    margin: 0; /* Remove the default margin that browsers apply around the body */
+    padding: 0; /* Remove the default padding that browsers apply inside the body */
+    background-color: white; /* Set the background color of the entire page to white */
+}
+
+.top-sectionn {
+    position: relative; /* Set the position to relative so that absolute elements can be positioned inside it */
+    height: 60vh; /* Set the height of this section to 60% of the viewport height */
+}
+
+.top-imagee {
+    width: 100%; /* Make sure the image stretches to cover the full width of the container */
+    height: 100%; /* Make sure the image stretches to cover the full height of the container */
+    object-fit: cover; /* Ensure the image maintains its aspect ratio and covers the area without stretching */
+}
+
+.overlay {
+    position: absolute; /* Position this overlay relative to the closest positioned ancestor (the top-section) */
+    top: 50%; /* Position it in the vertical center of the top-section */
+    left: 50%; /* Position it in the horizontal center of the top-section */
+    transform: translate(-50%, -50%); /* Adjust the position to exactly center it */
+    color: black; /* Set the text color within the overlay to black */
+    text-align: center; /* Center-align the text within the overlay */
+    padding: 20px; /* Add padding around the text to prevent it from touching the edges */
+    background-color: rgba(255, 255, 255, 0); /* Set a fully transparent background for the overlay */
+    max-width: 800px; /* Limit the maximum width of the overlay to avoid stretching too wide */
+    width: 90%; /* Allow the overlay to take up 90% of the container width for responsiveness */
+}
+
+.overlay h1 {
+    font-size: 50px; /* Set a large font size for the title to make it prominent */
+    margin-bottom: 40px; /* Add space below the title to separate it from the description */
+    color: #f0f0f0; /* Set the color of the title text */
+}
+
+.overlay p {
+    font-size: 20px; /* Set the font size for the description text */
+    margin-top: 10px; /* Add space above the description to separate it from the title */
+    color: #f0f0f0; /* Set the color of the description text */
+}
+
+/* Second Half Styling */
+.second-half {
+    position: relative; /* Allows absolute positioning of children within this section */
+    width: 100%; /* Ensure this section takes the full width of the page */
+    height: 50vh; /* Set height to cover half of the viewport height */
+    background: url('images/AdobeStock_333075604.jpeg') no-repeat center center; /* Set a background image with no repeat and center it */
+    background-size: contain; /* Make sure the background image fits within the section without being cropped */
+    background-color: white; /* Set a white background color behind the image */
+}
+
+/* Styling for the content inside the second half */
+.second-half-content {
+    position: relative; /* Establishes a positioning context for child elements */
+    display: flex; /* Use flexbox layout for arranging children */
+    justify-content: space-around; /* Distribute space evenly between the left and right sections */
+    align-items: center; /* Vertically center the content within the section */
+    height: 100%; /* Make this section take up the full height of the second half */
+    color: black; /* Set the text color to black for all text in this section */
+    padding: 20px; /* Add padding to give some breathing room to the content */
+}
+
+/* Styling for the left section */
+.left-section {
+    width: 45%; /* Set the width of the left section to 45% of the parent container */
+    text-align: center; /* Center-align the text within this section */
+}
+
+/* Styling for the right section */
+.right-section {
+    width: 45%; /* Set the width of the right section to 45% of the parent container */
+    text-align: center; /* Center-align the text within this section */
+}
+
+/* Title styling for sections */
+.section-title {
+    font-size: 32px; /* Set a large font size for section titles */
+    font-weight: bold; /* Make titles bold for emphasis */
+    margin-bottom: 20px; /* Add space below the title to separate it from the description */
+}
+
+/* Description styling for sections */
+.section-description {
+    font-size: 18px; /* Set a medium font size for section descriptions */
+    line-height: 1.6; /* Set line height to improve readability */
+}
+
+/* Center Divider Line */
+.center-line {
+    position: absolute; /* Position this line absolutely within its parent */
+    top: 0; /* Align the top of the line with the top of the parent */
+    left: 50%; /* Position the left side of the line at the center of the parent */
+    height: 100%; /* Set the height of the line to fill the parent container */
+    width: 2px; /* Set the line's width to 2px for visibility */
+    background-color: black; /* Set the color of the line to black */
+}
+
+/* Footer Styling */
+.about-footer {
+    background-color: black; /* Set the background color of the footer to black */
+    color: white; /* Set the text color of the footer to white */
+    padding: 20px; /* Add padding inside the footer for spacing */
+}
+
+.a_footer-content {
+    display: flex; /* Use flexbox for layout to arrange footer items */
+    justify-content: space-between; /* Space items evenly across the footer */
+    align-items: flex-start; /* Align items to the top within the footer */
+}
+
+.footer-about {
+    flex: 0 1 30%; /* Allow this section to take up about 30% of the footer's width */
+}
+
+.footer-links {
+    flex: 0 1 40%; /* Allow this section to take up about 40% of the footer's width */
+    text-align: center; /* Center-align the text within this section */
+}
+
+.footer-contact {
+    flex: 0 1 30%; /* Allow this section to take up about 30% of the footer's width */
+    text-align: right; /* Right-align the text within this section */
+}
+
+.footer-about h3,
+.footer-links h3,
+.footer-contact h3 {
+    font-size: 20px; /* Set the font size for footer section titles */
+    margin-bottom: 10px; /* Add space below the title to separate it from the description */
+}
+
+.footer-links ul {
+    list-style-type: none; /* Remove default bullet points from the list */
+    padding: 0; /* Remove padding from the list */
+}
+
+.footer-links li {
+    margin: 5px 0; /* Add space between individual list items */
+}
+
+
+
+
