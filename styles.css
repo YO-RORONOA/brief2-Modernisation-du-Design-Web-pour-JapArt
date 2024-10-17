@@ -236,3 +236,36 @@ footer p {
     margin: 0;
     font-size: 0.9em;
 }
+
+/* Basic Styling */
+body {
+    background-color: black; /* Set background color of the page to black */
+    color: white; /* Set default text color to white */
+    font-family: Arial, sans-serif; /* Use Arial font with fallback to sans-serif */
+    margin: 0; /* Remove default margin around the body */
+    padding: 0; /* Remove default padding around the body */
+}
+
+/* Navigation */
+header {
+    background-color: #333; /* Set header background color to dark gray */
+    padding: 10px 20px; /* Add padding inside the header */
+    display: flex; /* Use flexbox layout for header */
+    justify-content: space-between; /* Space out navigation items */
+    align-items: center; /* Center items vertically within the header */
+}
+
+nav .nav-left {
+    font-size: 20px; /* Set font size for the left navigation items */
+}
+
+nav .nav-right a {
+    color: white; /* Set link color to white */
+    text-decoration: none; /* Remove underline from links */
+    margin: 0 15px; /* Add margin between navigation links */
+    font-size: 18px; /* Set font size for navigation links */
+}
+
+nav .nav-right a:hover {
+    color: #f0a500; /* Change link color on hover */
+}
