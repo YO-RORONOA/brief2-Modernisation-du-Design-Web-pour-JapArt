@@ -269,3 +269,51 @@ nav .nav-right a {
 nav .nav-right a:hover {
     color: #f0a500; /* Change link color on hover */
 }
+
+/* Intro Section */
+.intro {
+    padding: 20px; /* Add padding around the intro section */
+    display: flex; /* Use flexbox layout for the intro section */
+}
+
+.image-title {
+    display: flex; /* Use flexbox layout for image and title */
+    align-items: flex-start; /* Align items at the start */
+}
+
+.top-image {
+    width: 800px !important; /* Set image width to 800px, !important to override other styles */
+    margin-right: 50px; /* Add space to the right of the image */
+    margin-left: 50px; /* Add space to the left of the image */
+}
+
+.title-content h1 {
+    margin: 0; /* Remove default margin from title */
+}
+
+.big-line {
+    width: calc(100% - 220px); /* Set width of the line based on available space */
+    border: 1px solid white; /* Set border color to white for the line */
+}
+
+/* Three Images Section */
+.three-images {
+    display: flex; /* Use flexbox layout for three images */
+    justify-content: center; /* Center images horizontally */
+    padding: 20px 0; /* Add vertical padding */
+}
+
+.image-container {
+    position: relative; /* Position relative to allow absolute positioning of overlay */
+    width: 25%; /* Set width for each image container */
+    height: 700px; /* Fixed height for consistency */
+    text-align: center; /* Center-align any text in the container */
+    margin: 0 20px; /* Add margin for space between images */
+}
+
+.image-container img {
+    width: 100%; /* Make image fill the container width */
+    height: 700px; /* Fixed height to maintain size */
+    object-fit: cover; /* Maintain aspect ratio without distortion */
+    border-radius: 8px; /* Optional rounded corners for the images */
+}
