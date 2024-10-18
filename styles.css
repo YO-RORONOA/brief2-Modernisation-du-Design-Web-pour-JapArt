@@ -5,7 +5,7 @@
 }
 
 body {
-    font-family: cursive;
+    font-family: font-family: "Comic Sans MS", cursive, sans-serif;;
     color: #195362;
     background-color: #f4f4f4;
 }
@@ -73,7 +73,7 @@ nav {
 
 /* Hero section*/
 .hero {
-    background-image: url('images/hero\ omage\ caligraphy\ art.jpeg');
+    background-image: url('images/hero\ ink\ image.webp');
     background-size: cover;
     background-position: center;
     height: 80vh;
@@ -148,7 +148,7 @@ section#collection {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 140px;
+    gap: 200px;
 }
 
 .art-item {
@@ -196,7 +196,7 @@ section#collection {
 body {
     background-color: black; /* Set background color of the page to black */
     color: white; /* Set default text color to white */
-    font-family: Arial, sans-serif; /* Use Arial font with fallback to sans-serif */
+    font-family: "Comic Sans MS", cursive, sans-serif; /* Use Arial font with fallback to sans-serif */
     margin: 0; /* Remove default margin around the body */
     padding: 0; /* Remove default padding around the body */
 }
@@ -262,6 +262,9 @@ body {
     color: white; /* Set text color to white */
     box-sizing: border-box; /* Include padding in the total width */
     border-radius: 15px; /* Rounded corners for the overlay */
+}
+.overlay h2 {
+    color: white;
 }
 
 /* Button Styling for Three Images */
@@ -343,6 +346,10 @@ body {
     height: 15px;
 }
 
+.section-title {
+    margin-top: 80px;
+}
+
 .artwork-item img {
     width: 100%; /* Make image fill the width of the artwork item */
     height: 400px; /* Fixed height for artwork images */
@@ -362,6 +369,29 @@ button {
 
 button:hover {
     background-color: #f0f0f0; /* Change button color on hover */
+}
+.button-container {
+    display: flex; /* Use flexbox for centering */
+    justify-content: center; /* Center horizontally */
+    margin-top: 20px; /* Add space above the button */
+    border-radius: 100%;
+    margin-bottom: 30px;
+}
+
+.show-more {
+    background-color: white; /* White background */
+    color: black; /* Black text */
+    border: none; /* Remove default border */
+    padding: 10px 20px; /* Padding for button */
+    font-size: 16px; /* Font size */
+    cursor: pointer; /* Change cursor on hover */
+    border-radius: 5px; /* Optional rounded corners */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+    border-radius: 30px;
+}
+
+.show-more:hover {
+    background-color: #f0f0f0; /* Change background on hover for effect */
 }
 
 
@@ -439,16 +469,19 @@ body {
     padding: 20px; /* Add padding to give some breathing room to the content */
 }
 
-/* Styling for the left section */
 .left-section {
-    width: 45%; /* Set the width of the left section to 45% of the parent container */
-    text-align: center; /* Center-align the text within this section */
+    width: 45%; /* Keep the section width at 45% of the parent container */
+    text-align: left; /* Align the text to the left */
+    max-width: 500px; /* Set a maximum width for the content */
+    margin: 0 auto; /* Center the content within the section */
 }
 
 /* Styling for the right section */
 .right-section {
-    width: 45%; /* Set the width of the right section to 45% of the parent container */
-    text-align: center; /* Center-align the text within this section */
+    width: 45%; /* Keep the section width at 45% of the parent container */
+    text-align: left; /* Align the text to the left */
+    max-width: 500px; /* Set a maximum width for the content */
+    margin: 0 auto; /* Center the content within the section */
 }
 
 /* Title styling for sections */
@@ -489,16 +522,24 @@ body {
 
 .footer-about {
     flex: 0 1 30%; /* Allow this section to take up about 30% of the footer's width */
+    max-width: 300px; /* Set a maximum width for the "About Us" section */
 }
 
 .footer-links {
     flex: 0 1 40%; /* Allow this section to take up about 40% of the footer's width */
     text-align: center; /* Center-align the text within this section */
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Arrange the items in a vertical column */
+    align-items: center; /* Center items horizontally */
 }
 
 .footer-contact {
-    flex: 0 1 30%; /* Allow this section to take up about 30% of the footer's width */
+    flex: 0 1 17%; /* Allow this section to take up about 30% of the footer's width */
     text-align: right; /* Right-align the text within this section */
+    margin: 10px 0;
+}
+.footer-contact p{
+    margin: 20px 0;
 }
 
 .footer-about h3,
@@ -514,7 +555,17 @@ body {
 }
 
 .footer-links li {
-    margin: 5px 0; /* Add space between individual list items */
+    margin: 5px 0; /* Add vertical space between individual list items */
+}
+
+/* Styling for the links */
+.footer-links a {
+    color: white; /* Set the link color to white */
+    text-decoration: none; /* Remove the underline from the links */
+}
+
+.footer-links a:hover {
+    text-decoration: underline; /* Add an underline on hover */
 }
 
 
